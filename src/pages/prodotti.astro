@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProductCard from "../components/ProductCard.astro";
+import prodotti from "../data/products.json";
+---
+
+<BaseLayout
+    title="Catalogo Prodotti"
+    description="Scopri tutte le carte TCG disponibili"
+>
+    <section class="max-w-7xl mx-auto py-16 px-4">
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">I nostri prodotti</h1>
+        <p class="text-gray-400 mb-12">
+            Sfoglia il catalogo: booster box, mazzi tematici, carte singole e
+            accessori per i tuoi giochi preferiti.
+        </p>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {prodotti.map((product) => <ProductCard product={product} />)}
+        </div>
+    </section>
+</BaseLayout>

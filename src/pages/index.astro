@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ProductCard from "../components/ProductCard.astro";
+import prodotti from "../data/products.json";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Mostra solo i primi 3 in evidenza
+const featured = prodotti.slice(0, 3);
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Home" description="Negozio specializzato in carte TCG">
+	<Hero />
+
+	<section class="max-w-7xl mx-auto py-20 px-4">
+		<h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+			In <span class="text-blue-400">evidenza</span>
+		</h2>
+		<p class="text-gray-400 text-center mb-12 max-w-xl mx-auto">
+			I prodotti più richiesti della settimana. Clicca su "Vedi tutti" per
+			esplorare il catalogo completo.
+		</p>
+
+		<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-12">
+			{featured.map((product) => <ProductCard product={product} />)}
+		</div>
+
+		<div class="text-center">
+			<a
+				href="/prodotti"
+				class="inline-block border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-950 font-semibold py-3 px-8 rounded-full transition"
+			>
+				Vedi tutti i prodotti
+			</a>
+		</div>
+	</section>
+
+	<section class="bg-gray-900 py-20 px-4">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-3xl md:text-4xl font-bold mb-6">
+				Perché scegliere noi
+			</h2>
+			<div class="grid gap-8 md:grid-cols-2 mt-12">
+				<div>
+					<div class="text-4xl mb-4">📦</div>
+					<h3 class="text-xl font-semibold mb-2">
+						Spedizione rapida
+					</h3>
+					<p class="text-gray-400">
+						Ordina entro le 14 e ricevi in 24/48 ore.
+					</p>
+				</div>
+				<div>
+					<div class="text-4xl mb-4">🤝</div>
+					<h3 class="text-xl font-semibold mb-2">Community attiva</h3>
+					<p class="text-gray-400">
+						Organizziamo tornei settimanali nel nostro negozio.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
