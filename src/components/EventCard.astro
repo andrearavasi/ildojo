@@ -3,7 +3,7 @@ export interface Event {
     id: number;
     nome: string;
     gioco: string;
-    prezzo: number;
+    data: string;
     immagine: string;
     descrizione: string;
 }
@@ -26,6 +26,7 @@ const { event } = Astro.props as { event: Event };
             >{event.gioco}</span
         >
         <h3 class="text-xl font-bold mt-1 mb-2">{event.nome}</h3>
+        <p class="text-gray-400 text-sm mb-4">{event.data}</p>
         <p class="text-gray-400 text-sm mb-4">{event.descrizione}</p>
     </div>
 </div>
