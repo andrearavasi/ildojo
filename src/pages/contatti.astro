@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import shopInfo from "../data/shopinfo.json";
 ---
 
 <BaseLayout
@@ -16,14 +17,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     target="_blank"
                 >
                     <p class="text-gray-300">
-                        📍 Via Corsica, 43, 23843 Dolzago LC
+                        📍 {shopInfo[0].indirizzo}
                     </p>
                 </a>
 
                 <p class="text-gray-300 mt-2">🕒 Lun - Sab: 10:00 – 19:30</p>
                 <p class="text-gray-300 mt-2">
-                    📞 <a href="tel:+393892545507" class="hover:text-blue-300"
-                        >+39 3892545507</a
+                    📞 <a
+                        href="tel:+39{shopInfo[0].telefono}"
+                        class="hover:text-blue-300"
+                        >+39 {shopInfo[0].telefono}</a
                     >
                 </p>
                 <p class="text-gray-300 mt-2">
@@ -38,13 +41,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     <div class="flex gap-4 text-blue-400">
                         <!-- <a href="#" class="hover:text-blue-300">Facebook</a> -->
                         <a
-                            href="https://www.instagram.com/ildojotcg/"
+                            href={shopInfo[0].instagram}
                             target="_blank"
                             class="hover:text-blue-300">Instagram</a
                         >
                         <!-- <a href="#" class="hover:text-blue-300">Discord</a> -->
                         <a
-                            href="https://wa.me/3892545507"
+                            href={shopInfo[0].whatsapp}
                             target="_blank"
                             class="hover:text-blue-300">WhatsApp</a
                         >

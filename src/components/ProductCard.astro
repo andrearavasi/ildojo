@@ -32,14 +32,14 @@ const { product } = Astro.props as { product: Product };
         <p class="text-gray-400 text-sm mb-4">{product.descrizione}</p>
         <div class="flex items-center justify-between">
             <span class="text-2xl font-bold text-green-400"
-                >€ {product.prezzo?.toFixed(2)}</span
+                >{product.prezzo ? product.prezzo?.toFixed(2) + " €" : ""}</span
             >
-            <button
+            <!-- <button
                 class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold transition"
             >
                 Acquista
-            </button>
-            <BuyButton product={product} client:load />
+            </button> -->
+            <BuyButton product={product} />
         </div>
     </div>
 </div>
