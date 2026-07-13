@@ -3,7 +3,6 @@
         "id": 1,
         "nome": "Booster Box Set Base",
         "gioco": "Pokémon",
-        "prezzo": 120.00,
         "immagine": "https://placehold.co/400x300/3b82f6/white?text=Booster+Box",
         "descrizione": "Scatola da 36 bustine del Set Base, perfetta per iniziare la collezione."
     },
@@ -11,7 +10,6 @@
         "id": 2,
         "nome": "Mazzo Drago",
         "gioco": "Magic: The Gathering",
-        "prezzo": 25.00,
         "immagine": "https://placehold.co/400x300/ef4444/white?text=Dragon+Deck",
         "descrizione": "Mazzo pronto per giocare, ideale per i nuovi planeswalker."
     },
@@ -19,7 +17,6 @@
         "id": 3,
         "nome": "Carta Singola - Pikachu VMAX",
         "gioco": "Pokémon",
-        "prezzo": 45.00,
         "immagine": "https://placehold.co/400x300/facc15/black?text=Pikachu+VMAX",
         "descrizione": "Pikachu VMAX in condizioni Near Mint, edizione speciale."
     },
@@ -27,7 +24,6 @@
         "id": 4,
         "nome": "Sleeves Protettive 100pz",
         "gioco": "Accessori",
-        "prezzo": 8.90,
         "immagine": "https://placehold.co/400x300/10b981/white?text=Sleeves",
         "descrizione": "Bustine protettive trasparenti per proteggere le tue carte migliori."
     }
