@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import WhatsappButton from "../scripts/WhatsappButton.jsx";
+
+// Simulazione di dati di un prodotto (magari recuperati da un CMS o Markdown)
+
+const { product } = Astro.props.product as {
+    product: {
+        name: string;
+        price: number;
+        sku: string;
+    };
+};
+---
+
+<Layout product={product} title={product.name}>
+    <main class="product-page">
+        <h1>{product.name}</h1>
+        <p class="price">{product.price}</p>
+
+        <!-- Passiamo le info al componente React -->
+        <WhatsappButton
+            client:load
+            productName={product.name}
+            price={product.price}
+            sku={product.sku}
+        />
+    </main>
+</Layout>
+
+<style>
+    /* Un pizzico di stile per il pulsante */
+    .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        background-color: #25d366;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+    }
+    .btn-whatsapp:hover {
+        background-color: #128c7e;
+    }
+</style>
