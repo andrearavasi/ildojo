@@ -11,6 +11,7 @@ export interface Product {
     prezzo: number;
     immagine: string;
     descrizione: string;
+    limitato: boolean;
 }
 
 const { product } = Astro.props as { product: Product };
@@ -22,6 +23,7 @@ const { product } = Astro.props as { product: Product };
     productName={product.nome}
     price={product.prezzo?.toFixed(2)}
     productCode={product.id}
+    limitato={product.limitato}
 />
 
 <style>
