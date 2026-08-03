@@ -6,7 +6,7 @@ import prodotti from "../data/products.json";
 
 <BaseLayout
     title="Catalogo Prodotti"
-    description="Scopri tutte le carte TCG disponibili"
+    description="Scopri tutti i prodotti TCG disponibili"
 >
     <section class="max-w-7xl mx-auto py-16 px-4">
         <h1 class="text-4xl md:text-5xl font-bold mb-2">I nostri prodotti</h1>
@@ -18,5 +18,9 @@ import prodotti from "../data/products.json";
         <div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {prodotti.map((product) => <ProductCard product={product} />)}
         </div>
+        <p class="text-gray-400 mt-10">
+            Non trovi quello che cerchi? Contattaci e ti aiuteremo a trovare il
+            prodotto!
+        </p>
     </section>
 </BaseLayout>
