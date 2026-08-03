@@ -5,7 +5,8 @@
         "gioco": "One Piece TCG",
         "immagine": "https://www.lafumetteria.it/thumb/1000/148031",
         "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
-        "prezzo": 30.00
+        "prezzo": 30.00,
+        "limitato": true
     },
   {
         "id": 2,
@@ -13,6 +14,7 @@
         "gioco": "One Piece TCG",
         "immagine": "https://www.lafumetteria.it/thumb/800/148033",
         "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
-        "prezzo": 30.00
+        "prezzo": 30.00,
+        "limitato": true
     }
 ]

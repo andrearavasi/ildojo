@@ -9,6 +9,7 @@ export interface Product {
     prezzo: number;
     immagine: string;
     descrizione: string;
+    limitato: boolean;
 }
 
 const { product } = Astro.props as { product: Product };
