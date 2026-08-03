@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "nome": "Booster Box Set Base",
-        "gioco": "Pokémon",
-        "immagine": "https://placehold.co/400x300/3b82f6/white?text=Booster+Box",
-        "descrizione": "Scatola da 36 bustine del Set Base, perfetta per iniziare la collezione."
+        "nome": "Illustration Box Rayleigh/Shakuyaku",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/thumb/1000/148031",
+        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack."
     },
-    {
+  {
         "id": 2,
-        "nome": "Mazzo Drago",
-        "gioco": "Magic: The Gathering",
-        "immagine": "https://placehold.co/400x300/ef4444/white?text=Dragon+Deck",
-        "descrizione": "Mazzo pronto per giocare, ideale per i nuovi planeswalker."
+        "nome": "Illustration Box Kid/Killer",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/thumb/800/148033",
+        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack."
     },
     {
         "id": 3,
