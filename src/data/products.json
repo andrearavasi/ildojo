@@ -16,5 +16,59 @@
         "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
         "prezzo": 30.00,
         "limitato": true
+    },
+     {
+        "id": 3,
+        "nome": "Starter Deck [ST-31]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16079",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
+    },    
+     {
+        "id": 4,
+        "nome": "Starter Deck [ST-32]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16078",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
+    },    
+     {
+        "id": 5,
+        "nome": "Starter Deck [ST-33]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16076",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
+    },    
+     {
+        "id": 6,
+        "nome": "Starter Deck [ST-34]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16075",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
+    },    
+     {
+        "id": 7,
+        "nome": "Starter Deck [ST-35]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16074",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
+    },    
+     {
+        "id": 8,
+        "nome": "Starter Deck [ST-36]",
+        "gioco": "One Piece TCG",
+        "immagine": "https://www.lafumetteria.it/othumb/800/16073",
+        "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
+        "prezzo": 20.00,
+        "limitato": true
     }
 ]

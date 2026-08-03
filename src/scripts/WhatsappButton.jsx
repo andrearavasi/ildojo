@@ -28,7 +28,7 @@ export default function WhatsappButton({ productName, price, productCode, limita
                 rel="noopener noreferrer"
                 className="btn-whatsapp"
             >
-                {limitato ? "Richiedi info disponibilità" : price}
+                {limitato ? "Richiedi info disponibilità" : "Acquista"}
             </a>
         </button>
     );
