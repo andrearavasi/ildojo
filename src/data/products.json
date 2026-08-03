@@ -4,27 +4,15 @@
         "nome": "Illustration Box Rayleigh/Shakuyaku",
         "gioco": "One Piece TCG",
         "immagine": "https://www.lafumetteria.it/thumb/1000/148031",
-        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack."
+        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
+        "prezzo": 30.00
     },
   {
         "id": 2,
         "nome": "Illustration Box Kid/Killer",
         "gioco": "One Piece TCG",
         "immagine": "https://www.lafumetteria.it/thumb/800/148033",
-        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack."
-    },
-    {
-        "id": 3,
-        "nome": "Carta Singola - Pikachu VMAX",
-        "gioco": "Pokémon",
-        "immagine": "https://placehold.co/400x300/facc15/black?text=Pikachu+VMAX",
-        "descrizione": "Pikachu VMAX in condizioni Near Mint, edizione speciale."
-    },
-    {
-        "id": 4,
-        "nome": "Sleeves Protettive 100pz",
-        "gioco": "Accessori",
-        "immagine": "https://placehold.co/400x300/10b981/white?text=Sleeves",
-        "descrizione": "Bustine protettive trasparenti per proteggere le tue carte migliori."
+        "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
+        "prezzo": 30.00
     }
 ]
