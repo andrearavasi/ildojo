@@ -1,7 +1,7 @@
 
 import shopInfo from "../data/shopinfo.json";
 
-export default function WhatsappButton({ productName, price, productCode, limitato }) {
+export default function WhatsappButton({ productName, price, productCode, limitato, esaurito }) {
     const phoneNumber = shopInfo[0].telefono;
 
     // Il template del tuo messaggio personalizzato
@@ -28,7 +28,7 @@ export default function WhatsappButton({ productName, price, productCode, limita
                 rel="noopener noreferrer"
                 className="btn-whatsapp"
             >
-                {limitato ? "Richiedi info disponibilità" : "Acquista"}
+                {esaurito ? "Prodotto esaurito" : limitato ? "Richiedi info disponibilità" : "Acquista"}
             </a>
         </button>
     );

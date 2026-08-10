@@ -1,5 +1,5 @@
 ---
-import Image from "astro/components/Image.astro";
+
 import BuyButton from "./BuyButton.astro";
 
 export interface Product {
@@ -10,6 +10,7 @@ export interface Product {
     immagine: string;
     descrizione: string;
     limitato: boolean;
+    esaurito: boolean;
 }
 
 const { product } = Astro.props as { product: Product };

@@ -6,7 +6,8 @@
         "immagine": "https://www.lafumetteria.it/thumb/1000/148031",
         "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
         "prezzo": 30.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": true
     },
   {
         "id": 2,
@@ -15,7 +16,8 @@
         "immagine": "https://www.lafumetteria.it/thumb/800/148033",
         "descrizione": "Contenuto: 2 promo card, 2x op15 booster pack, 2x op16 booster pack.",
         "prezzo": 30.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": true
     },
      {
         "id": 3,
@@ -24,7 +26,8 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16079",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": false
     },    
      {
         "id": 4,
@@ -33,7 +36,8 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16078",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": true
     },    
      {
         "id": 5,
@@ -42,7 +46,8 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16076",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": false
     },    
      {
         "id": 6,
@@ -51,7 +56,8 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16075",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": false
     },    
      {
         "id": 7,
@@ -60,7 +66,8 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16074",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": false
     },    
      {
         "id": 8,
@@ -69,6 +76,77 @@
         "immagine": "https://www.lafumetteria.it/othumb/800/16073",
         "descrizione": "Mazzo costruito x1 (51 carte), Carte DON!! x10, Tabellone di gioco x1, Pacchetto Booster [OP-16] x1",
         "prezzo": 20.00,
-        "limitato": true
+        "limitato": true,
+        "esaurito": false
+    },
+    {
+        "id": 9,
+        "nome": "Dragon Shield Dual Matte Sleeves - Orchid",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/600/136069",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 10,
+        "nome": "Dragon Shield Dual Matte Sleeves - Pomegranate & Gold",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/600/144945",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 11,
+        "nome": "Dragon Shield Dual Matte Sleeves - Cobalt & Silver",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/800/144277",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 12,
+        "nome": "Dragon Shield Dual Matte Sleeves - Blossom",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/600/146895",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 13,
+        "nome": "Dragon Shield Dual Matte Sleeves - Justice",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/800/142977",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 14,
+        "nome": "Dragon Shield Dual Matte Sleeves - Wisdom",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/600/141805",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
+    },
+    {
+        "id": 15,
+        "nome": "Dragon Shield Dual Matte Sleeves - Gooseberry",
+        "gioco": "Accessori",
+        "immagine": "https://www.lafumetteria.it/thumb/600/146897",
+        "descrizione": "100pz - DUAL - Maniche completamente opache con un interno nero",
+        "prezzo": 12.00,
+        "limitato": false,
+        "esaurito": false
     }
 ]
