@@ -1,26 +1,34 @@
 [
-    {
-        "id": 1,
-        "nome": "Pre-Rift Event",
-        "gioco": "Riftbound",
-        "data": "2024-07-15  18:00",
-        "immagine": "https://placehold.co/400x300/3b82f6/white?text=Pre+-+Rift+Event",
-        "descrizione": "Evento pre release per i fan di Riftbound, con anteprime esclusive e premi unici."
-    },
-    {
-        "id": 2,
-        "nome": "Pre Release OP420",
-        "gioco": "OnePiece TCG",
-        "data": "2024-07-15  18:00",
-        "immagine": "https://placehold.co/400x300/ef4444/white?text=OP420",
-        "descrizione": "Rufy Re dei pirati muore contro Buggy."
-    },
-    {
-        "id": 3,
-        "nome": "Magic: The Gathering - Pauper Tournament",
-        "gioco": "Magic: The Gathering",
-        "data": "2024-07-15  18:00",
-        "immagine": "https://placehold.co/400x300/facc15/black?text=Pauper",
-        "descrizione": "Torneo di Magic: The Gathering in formato Pauper."
-    }
+  {
+    "id": 1,
+    "nome": "Pre-Rift Event",
+    "gioco": "Riftbound",
+    "data": "2024-07-15  18:00",
+    "immagine": "https://placehold.co/400x300/3b82f6/white?text=Pre+-+Rift+Event",
+    "descrizione": "Evento pre release per i fan di Riftbound, con anteprime esclusive e premi unici."
+  },
+  {
+    "id": 2,
+    "nome": "Pre Release OP420",
+    "gioco": "OnePiece TCG",
+    "data": "2024-07-15  18:00",
+    "immagine": "https://placehold.co/400x300/ef4444/white?text=OP420",
+    "descrizione": "Rufy Re dei pirati muore contro Buggy."
+  },
+  {
+    "id": 3,
+    "nome": "Magic: The Gathering - Pauper Tournament",
+    "gioco": "Magic: The Gathering",
+    "data": "2024-07-15  18:00",
+    "immagine": "https://placehold.co/400x300/facc15/black?text=Pauper",
+    "descrizione": "Torneo di Magic: The Gathering in formato Pauper."
+  },
+  {
+    "id": 4,
+    "nome": "Pre Release OP17",
+    "gioco": "One Piece",
+    "data": "2026-08-22  15:30",
+    "immagine": "https://www.lafumetteria.it/thumb/1000/148165",
+    "descrizione": ""
+  }
 ]
