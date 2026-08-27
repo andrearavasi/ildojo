@@ -10,9 +10,39 @@ import EventCard from "../components/EventCard.astro";
         <p class="text-gray-400 mb-12">
             Rimani aggiornato sulle attività e gli eventi in programma.
         </p>
+        <div>
+            <p>Cerca gli eventi tramite i siti ufficiali:</p>
+            <div class="mb-8 mt-2 flex flex-wrap gap-4">
+                <button
+                    class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-full text-lg transition shadow-lg shadow-blue-600/30 mb-4"
+                >
+                    <a
+                        href="https://www.bandai-tcg-plus.com/event?organizer_id=17328&organizer_name=IL%20DOJO%20"
+                        target="_blank"
+                        rel="noopener noreferrer">One Piece</a
+                    >
+                </button>
+                <button
+                    class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-full text-lg transition shadow-lg shadow-blue-600/30 mb-4"
+                >
+                    <!-- <img
+                        src="https://locator.riftbound.uvsgames.com/riftbound-logo.svg"
+                        alt="Riftbound Logo"
+                        class="inline-block h-5 mr-2"
+                    /> -->
+                    <a
+                        href="https://locator.riftbound.uvsgames.com/stores/ff87eb66-722b-4b05-aa4a-557e345b0147"
+                        target="_blank"
+                        rel="noopener noreferrer">Riftbound</a
+                    >
+                </button>
+            </div>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {eventi.map((evento) => <EventCard event={evento} />)}
+            <div
+                class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            >
+                {eventi.map((evento) => <EventCard event={evento} />)}
+            </div>
         </div>
-    </section>
-</BaseLayout>
+    </section></BaseLayout
+>
