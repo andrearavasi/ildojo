@@ -28,7 +28,7 @@ import shopInfo from "../data/shopinfo.json";
 
                 <p class="text-gray-300 mt-2">
                     📞 <a
-                        href="tel:+39{shopInfo[0].telefono}"
+                        href={`tel:+39${shopInfo[0].telefono}`}
                         class="hover:text-blue-300"
                         >+39 {shopInfo[0].telefono}</a
                     >
@@ -36,7 +36,7 @@ import shopInfo from "../data/shopinfo.json";
                 <p class="text-gray-300 mt-2">
                     ✉️ <a
                         href={`mailto:${shopInfo[0].email}`}
-                        class="hover:text-blue-300">${shopInfo[0].email}</a
+                        class="hover:text-blue-300">{shopInfo[0].email}</a
                     >
                 </p>
 
