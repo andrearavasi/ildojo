@@ -2,6 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProductCard from "../components/ProductCard.astro";
 import prodotti from "../data/products.json";
+
+// Estraggo i giochi unici per popolare il select
+const giochiUnici = [...new Set(prodotti.map((p) => p.gioco))].sort();
 ---
 
 <BaseLayout
@@ -15,12 +18,168 @@ import prodotti from "../data/products.json";
             accessori per i tuoi giochi preferiti.
         </p>
 
-        <div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-            {prodotti.map((product) => <ProductCard product={product} />)}
+        <!-- Barra filtri/ordinamento -->
+        <div
+            class="flex flex-wrap gap-4 items-center mb-8 p-4 rounded-lg bg-gray-800/50"
+        >
+            <div class="flex flex-col gap-1">
+                <label for="filtro-gioco" class="text-sm text-gray-400"
+                    >Gioco</label
+                >
+                <select
+                    id="filtro-gioco"
+                    class="bg-gray-900 text-white rounded px-3 py-2"
+                >
+                    <option value="">Tutti</option>
+                    {giochiUnici.map((g) => <option value={g}>{g}</option>)}
+                </select>
+            </div>
+
+            <div class="flex flex-col gap-1">
+                <label for="ordinamento" class="text-sm text-gray-400"
+                    >Ordina per</label
+                >
+                <select
+                    id="ordinamento"
+                    class="bg-gray-900 text-white rounded px-3 py-2"
+                >
+                    <option value="default">Predefinito</option>
+                    <option value="prezzo-asc">Prezzo crescente</option>
+                    <option value="prezzo-desc">Prezzo decrescente</option>
+                    <option value="nome-asc">Nome (A-Z)</option>
+                    <option value="nome-desc">Nome (Z-A)</option>
+                </select>
+            </div>
+
+            <label class="flex items-center gap-2 text-sm text-gray-300 mt-5">
+                <input
+                    type="checkbox"
+                    id="filtro-disponibili"
+                    class="accent-orange-500"
+                />
+                Solo disponibili
+            </label>
+
+            <label class="flex items-center gap-2 text-sm text-gray-300 mt-5">
+                <input
+                    type="checkbox"
+                    id="filtro-limitati"
+                    class="accent-orange-500"
+                />
+                Solo edizioni limitate
+            </label>
+
+            <span
+                id="conteggio-risultati"
+                class="text-sm text-gray-500 mt-5 ml-auto"></span>
         </div>
+
+        <div
+            id="griglia-prodotti"
+            class="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+        >
+            {
+                prodotti.map((product) => (
+                    <div
+                        class="product-item"
+                        data-id={product.id}
+                        data-gioco={product.gioco}
+                        data-prezzo={product.prezzo}
+                        data-nome={product.nome}
+                        data-limitato={product.limitato}
+                        data-esaurito={product.esaurito}
+                    >
+                        <ProductCard product={product} />
+                    </div>
+                ))
+            }
+        </div>
+
+        <p id="nessun-risultato" class="text-gray-400 mt-10 hidden">
+            Nessun prodotto corrisponde ai filtri selezionati.
+        </p>
+
         <p class="text-gray-400 mt-10">
             Non trovi quello che cerchi? Contattaci e ti aiuteremo a trovare il
             prodotto!
         </p>
     </section>
 </BaseLayout>
+
+<script>
+    const griglia = document.getElementById("griglia-prodotti")!;
+    const items = Array.from(
+        griglia.querySelectorAll<HTMLElement>(".product-item"),
+    );
+
+    const filtroGioco = document.getElementById(
+        "filtro-gioco",
+    ) as HTMLSelectElement;
+    const ordinamento = document.getElementById(
+        "ordinamento",
+    ) as HTMLSelectElement;
+    const filtroDisponibili = document.getElementById(
+        "filtro-disponibili",
+    ) as HTMLInputElement;
+    const filtroLimitati = document.getElementById(
+        "filtro-limitati",
+    ) as HTMLInputElement;
+    const conteggio = document.getElementById("conteggio-risultati")!;
+    const nessunRisultato = document.getElementById("nessun-risultato")!;
+
+    function applica() {
+        const gioco = filtroGioco.value;
+        const ordine = ordinamento.value;
+        const soloDisponibili = filtroDisponibili.checked;
+        const soloLimitati = filtroLimitati.checked;
+
+        let visibili = 0;
+
+        // Filtro
+        items.forEach((item) => {
+            const matchGioco = !gioco || item.dataset.gioco === gioco;
+            const matchDisponibili =
+                !soloDisponibili || item.dataset.esaurito === "false";
+            const matchLimitati =
+                !soloLimitati || item.dataset.limitato === "true";
+
+            const visibile = matchGioco && matchDisponibili && matchLimitati;
+            item.style.display = visibile ? "" : "none";
+            if (visibile) visibili++;
+        });
+
+        // Ordinamento (riordina i nodi nel DOM)
+        const visibiliArr = items.filter((i) => i.style.display !== "none");
+        visibiliArr.sort((a, b) => {
+            switch (ordine) {
+                case "prezzo-asc":
+                    return (
+                        parseFloat(a.dataset.prezzo!) -
+                        parseFloat(b.dataset.prezzo!)
+                    );
+                case "prezzo-desc":
+                    return (
+                        parseFloat(b.dataset.prezzo!) -
+                        parseFloat(a.dataset.prezzo!)
+                    );
+                case "nome-asc":
+                    return a.dataset.nome!.localeCompare(b.dataset.nome!);
+                case "nome-desc":
+                    return b.dataset.nome!.localeCompare(a.dataset.nome!);
+                default:
+                    return 0;
+            }
+        });
+        visibiliArr.forEach((el) => griglia.appendChild(el));
+
+        conteggio.textContent = `${visibili} prodott${visibili === 1 ? "o" : "i"} trovati`;
+        nessunRisultato.classList.toggle("hidden", visibili !== 0);
+    }
+
+    filtroGioco.addEventListener("change", applica);
+    ordinamento.addEventListener("change", applica);
+    filtroDisponibili.addEventListener("change", applica);
+    filtroLimitati.addEventListener("change", applica);
+
+    applica();
+</script>
