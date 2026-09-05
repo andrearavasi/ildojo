@@ -35,8 +35,8 @@ import shopInfo from "../data/shopinfo.json";
                 </p>
                 <p class="text-gray-300 mt-2">
                     ✉️ <a
-                        href="mailto:info@tcgstore.it"
-                        class="hover:text-blue-300">info@tcgstore.it</a
+                        href={`mailto:${shopInfo[0].email}`}
+                        class="hover:text-blue-300">${shopInfo[0].email}</a
                     >
                 </p>
 
